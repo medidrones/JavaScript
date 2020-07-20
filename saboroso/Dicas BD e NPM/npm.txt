@@ -1,0 +1,33 @@
+Comandos pra Montar o Projeto
+
+OBS: npm uninstall - Comando para desinstalar. (Ex. npm uninstall express --save)
+
+- Instalação de modo global:
+npm install express-generator@4.16.0 -g
+instalação do MySQL - Criar o banco conforme template, e configurar Users. (ALTER USER 'user'@'%' IDENTIFIED WITH mysql_native_password BY 'password';
+OBS: Executar o ALTER USER para o USER, Localhost e IP 127.0.0.1.
+
+- Extrutura inicial do projeto:
+* Dentro da pasta saboroso:
+express --ejs saboroso
+npm install
+= Subir o servidor: set DEBUG=saboroso:* & npm start
+O template do site: Colocar dentro da pastra /Public/ (Obs: apagar o que tiver dentro antes de coldar)
+
+* Dentro da pasta \saboroso\public\admin
+bower install
+
+- Instalação das dependencias NPM sempre na pasta saboroso:
+npm install --save express-session@1.15.6 connect-redis@3.3.3
+OBS: Instalar o Redis-x64-3.2.100
+npm install formidable@1.2.1 --save 
+npm install moment@2.22.2 --save
+
+*Instalar chart.js (graficos)
+pasta: saboroso\public\admin
+bower install chart.js#2.7.2 --save
+
+*Para instalar o socket IO (Desinstalar o express e instalar na versão compativel
+npm uninstall express --save
+npm install --save express@4.15.2
+npm install socket.io@2.1.1 --save
